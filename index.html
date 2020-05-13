@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Car Racing Game</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+	<!-- Latest compiled and minified BOOTSTRAP CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<!-- Local CSS -->
+	<link rel="stylesheet" type="text/css" href="Assets/css/style.css">
+
+	<!-- Font-awesome 4.7 cdn -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body id="race">
+
+	<div class="container-fluid buttonsAndHead">
+		<div class="row">
+			<div class="col-md-12">
+				<h1>Car Racing Game</h1>
+			</div>
+		</div>
+		<div class="row buttonsRow">
+			<div class="col-md-1 offset-md-5">
+				<button type="button" class="btn btn-outline-light" id="racebtn">Race!</button>
+			</div>
+			<div class="col-md-1">
+				<button type="button" class="btn btn-outline-light" id="restartbtn">Start over</button>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid" id="raceTrack">
+
+		<div class="row">
+			<div class="col-md-1">
+				<img src="Assets/img/car2.gif" class="car" id="carOne">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12 shadow">
+				<span class="countdown"></span>
+				<img class="finishedImage">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-1">
+				<img src="Assets/img/car1.gif" class="car" id="carTwo">
+			</div>
+		</div>
+	</div>
+	</div>
+	<div class="container-fluid infoContainer">
+		<div class="row">
+			<div class="col-md-6" id="raceInfo">
+				<h2>Results</h2>
+				<div id="raceInfo1" class="raceInfo">
+					<h5>Car 1</h5>
+					<table class="table"></table>
+				</div>
+				<div id="raceInfo2" class="raceInfo">
+					<h5>Car 2</h5>
+					<table class="table"></table>
+				</div>
+
+			</div>
+			<div class="col-md-5 offset-md-1" id="previousRace">
+				<h3>Results from the previous time you played this game</h3>
+				<table class="table"></table>
+
+			</div>
+		</div>
+		<!-- jQuery library -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+
+		<script src="Assets/js/app.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+			integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+			crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+			crossorigin="anonymous"></script>
+</body>
+
+</html>
